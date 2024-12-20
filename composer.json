@@ -1,0 +1,35 @@
+{
+  "name": "afragen/alternate-updater",
+  "description": "Allow updates of plugins and themes from hosts returning appropriate API responses.",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andy Fragen",
+      "email": "andy@thefragens.com",
+      "homepage": "https://thefragens.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/WordPress/alternate-updater/issues",
+    "source": "https://github.com/WordPress/alternate-updater"
+  },
+  "prefer-stable": true,
+  "require": {
+    "php": ">=8.0"
+  },
+  "require-dev": {
+    "wp-coding-standards/wpcs": "^3.0.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "scripts": {
+    "wpcs": [
+      "vendor/bin/phpcbf .; vendor/bin/phpcs ."
+    ]
+  }
+}
