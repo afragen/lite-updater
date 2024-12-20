@@ -36,7 +36,9 @@ Add the following to your plugin or theme. Where `<update server URI>` is the do
 add_filter( 'au_server_domain', function () {
     return '<update server URI>';
 });
-( new \Fragen\Alternate_Updater\Updater( __FILE__ ) )->run();
+add_action( 'plugins_loaded', function () {
+    ( new \Fragen\Alternate_Updater\Updater( __FILE__ ) )->run();
+});
 ```
 
 FWIW, I test by decreasing the version number locally to see an update.
