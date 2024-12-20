@@ -80,7 +80,7 @@ class Updater {
 		if ( null === $this->update_server ) {
 			return new \WP_Error( 'no_domain', 'No update server domain' );
 		}
-		$url      = "$this->update_server/wp-json/git-updater/v1/plugins-api/?slug=$this->slug";
+		$url      = "$this->update_server/wp-json/git-updater/v1/update-api/?slug=$this->slug";
 		$response = get_site_transient( "git-updater-lite_{$this->file}" );
 		if ( ! $response ) {
 			$response = wp_remote_get( $url );
