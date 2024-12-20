@@ -33,7 +33,7 @@ Install the plugin.
 Add the following to your plugin or theme. Where `<update server URI>` is the domain to the update server, eg `https://git-updater.com`.
 
 ```php
-add_filter( 'au_server_domain', function () {
+add_filter( 'au_update_server', function () {
     return '<update server URI>';
 });
 add_action( 'plugins_loaded', function () {

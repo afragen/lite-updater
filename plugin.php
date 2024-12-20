@@ -70,7 +70,7 @@ class Updater {
 		}
 		$this->slug          = dirname( $this->file );
 		$this->local_version = get_file_data( $file_path, array( 'Version' => 'Version' ) )['Version'];
-		$this->update_server = apply_filters( 'au_server_domain', null );
+		$this->update_server = apply_filters( 'au_update_server', null );
 	}
 
 	/**
