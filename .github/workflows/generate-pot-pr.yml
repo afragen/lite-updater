@@ -63,6 +63,8 @@ jobs:
 
       - name: Create pull request
         if: env.CHANGES_DETECTED == 1
-        run: gh pr create --base main --head generate-pot --fill --body "Automated PR"
+        run: |
+          gh_pr_up() { gh pr create $* || gh pr edit $* }
+          gh_pr_up --base main --head generate-pot --fill --body "Automated PR"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
