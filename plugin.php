@@ -19,6 +19,8 @@
  * Network: true
  * Requires at least: 6.6
  * Requires PHP: 8.0
+ * GitHub Plugin URI: https://github.com/afragen/alternate-updater
+ * Primary Branch: main
  * Update URI: afragen/alternate-updater
  */
 
