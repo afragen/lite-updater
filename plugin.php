@@ -68,7 +68,7 @@ class Updater {
 		}
 		$this->slug          = dirname( $this->file );
 		$this->local_version = get_file_data( $file_path, array( 'Version' => 'Version' ) )['Version'];
-		$this->update_server = apply_filters( 'alternate_updater_domain', null );
+		$this->update_server = apply_filters( 'au_server_domain', null );
 	}
 
 	/**
@@ -269,7 +269,7 @@ class Updater {
 
 // Dog food 🐶.
 add_filter(
-	'alternate_updater_domain',
+	'au_server_domain',
 	function () {
 		return 'https://git-updater.com';
 	}
