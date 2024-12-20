@@ -64,3 +64,5 @@ jobs:
       - name: Create pull request
         if: env.CHANGES_DETECTED == 1
         run: gh pr create --base main --head generate-pot --fill
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
