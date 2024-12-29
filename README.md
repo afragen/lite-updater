@@ -1,6 +1,6 @@
 # Alternate Updater
 
-* Contributors: [Andy Fragen](https://github.com/afragen)
+* Contributors: afragen
 * Tags: plugin, theme, updater, git-updater
 * Requires at least: 6.6
 * Requires PHP: 8.0
