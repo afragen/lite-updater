@@ -4,8 +4,57 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "431272bbcfdc261999388e921e5f2118",
-    "packages": [],
+    "content-hash": "c407244a5e64bd43b6b5fb86a6f38c76",
+    "packages": [
+        {
+            "name": "afragen/git-updater-lite",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/afragen/git-updater-lite.git",
+                "reference": "e778faf919e39a349b87f9dff017a378a21cec91"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/afragen/git-updater-lite/zipball/e778faf919e39a349b87f9dff017a378a21cec91",
+                "reference": "e778faf919e39a349b87f9dff017a378a21cec91",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "Lite.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andy Fragen",
+                    "email": "andy@thefragens.com",
+                    "homepage": "https://github.com/afragen/git-updater-lite",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple class to integrate with Git Updater for standalone plugin/theme updates.",
+            "keywords": [
+                "plugin",
+                "theme",
+                "updater",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/afragen/git-updater-lite/issues",
+                "source": "https://github.com/afragen/git-updater-lite/tree/1.4.2"
+            },
+            "time": "2025-01-03T21:36:32+00:00"
+        }
+    ],
     "packages-dev": [
         {
             "name": "dealerdirect/phpcodesniffer-composer-installer",
