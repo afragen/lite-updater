@@ -49,7 +49,7 @@ class Loader {
 	 */
 	public function init() {
 		$plugin_path = trailingslashit( \WP_PLUGIN_DIR );
-		$plugins     = get_plugins();
+		$plugins     = \get_plugins();
 		foreach ( $plugins as $file => $plugin ) {
 			if ( ! empty( $plugin['UpdateURI'] ) ) {
 				self::$package_arr[] = $plugin_path . $file;
@@ -57,7 +57,7 @@ class Loader {
 		}
 
 		$theme_path = \ABSPATH . \WP_CONTENT_DIR . '/themes/';
-		$themes     = wp_get_themes();
+		$themes     = \wp_get_themes();
 		foreach ( $themes as $file => $theme ) {
 			if ( ! empty( $theme->get( 'UpdateURI' ) ) ) {
 				self::$package_arr[] = $theme_path . $file . '/style.css';
