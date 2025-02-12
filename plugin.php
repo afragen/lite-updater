@@ -49,6 +49,9 @@ class Loader {
 	 */
 	public function init() {
 		$plugin_path = trailingslashit( \WP_PLUGIN_DIR );
+		if ( ! function_exists( 'get_plugins' ) ) {
+			require_once ABSPATH . 'wp-admin/includes/plugin.php';
+		}
 		$plugins     = get_plugins();
 		foreach ( $plugins as $file => $plugin ) {
 			if ( ! empty( $plugin['UpdateURI'] ) ) {
