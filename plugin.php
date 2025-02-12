@@ -48,10 +48,12 @@ class Loader {
 	 * @return \stdClass
 	 */
 	public function init() {
-		$plugin_path = trailingslashit( \WP_PLUGIN_DIR );
+		// Seems to be required for PHPUnit testing on GitHub workflow.
 		if ( ! function_exists( 'get_plugins' ) ) {
 			require_once ABSPATH . 'wp-admin/includes/plugin.php';
 		}
+
+		$plugin_path = trailingslashit( \WP_PLUGIN_DIR );
 		$plugins     = get_plugins();
 		foreach ( $plugins as $file => $plugin ) {
 			if ( ! empty( $plugin['UpdateURI'] ) ) {
