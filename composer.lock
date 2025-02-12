@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c407244a5e64bd43b6b5fb86a6f38c76",
+    "content-hash": "8220b678fcbc6f31614e5b43f00d0539",
     "packages": [
         {
             "name": "afragen/git-updater-lite",
-            "version": "1.4.4",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afragen/git-updater-lite.git",
-                "reference": "7e8e9fe840491df8a12c5b3f7f38a3de174ec061"
+                "reference": "ae2232c2bc0b5ad705cf6278491d3aa58aa84c21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/afragen/git-updater-lite/zipball/7e8e9fe840491df8a12c5b3f7f38a3de174ec061",
-                "reference": "7e8e9fe840491df8a12c5b3f7f38a3de174ec061",
+                "url": "https://api.github.com/repos/afragen/git-updater-lite/zipball/ae2232c2bc0b5ad705cf6278491d3aa58aa84c21",
+                "reference": "ae2232c2bc0b5ad705cf6278491d3aa58aa84c21",
                 "shasum": ""
             },
             "require": {
@@ -50,9 +50,9 @@
             ],
             "support": {
                 "issues": "https://github.com/afragen/git-updater-lite/issues",
-                "source": "https://github.com/afragen/git-updater-lite/tree/1.4.4"
+                "source": "https://github.com/afragen/git-updater-lite/tree/2.0.0"
             },
-            "time": "2025-01-12T00:31:38+00:00"
+            "time": "2025-02-11T23:54:32+00:00"
         }
     ],
     "packages-dev": [
@@ -302,16 +302,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.11.2",
+            "version": "3.11.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
-                "reference": "1368f4a58c3c52114b86b1abe8f4098869cb0079"
+                "reference": "ba05f990e79cbe69b9f35c8c1ac8dca7eecc3a10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/1368f4a58c3c52114b86b1abe8f4098869cb0079",
-                "reference": "1368f4a58c3c52114b86b1abe8f4098869cb0079",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/ba05f990e79cbe69b9f35c8c1ac8dca7eecc3a10",
+                "reference": "ba05f990e79cbe69b9f35c8c1ac8dca7eecc3a10",
                 "shasum": ""
             },
             "require": {
@@ -376,9 +376,13 @@
                 {
                     "url": "https://opencollective.com/php_codesniffer",
                     "type": "open_collective"
+                },
+                {
+                    "url": "https://thanks.dev/phpcsstandards",
+                    "type": "thanks_dev"
                 }
             ],
-            "time": "2024-12-11T16:04:26+00:00"
+            "time": "2025-01-23T17:04:15+00:00"
         },
         {
             "name": "wp-coding-standards/wpcs",
