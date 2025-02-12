@@ -13,7 +13,7 @@
  * Plugin URI:  https://github.com/afragen/alternate-updater
  * Description:  Allow for alternate sources of plugin/theme updates. Currently integrated with update server running Git Updater.
  * Author: Andy Fragen
- * Version: 0.1.0
+ * Version: 0.2.0
  * License: MIT
  * Text Domain: alternate-updater
  * Network: true
