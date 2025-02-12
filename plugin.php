@@ -33,12 +33,52 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
+/**
+ * Class Loader
+ */
+class Loader {
+
+	// phpcs:ignore Generic.Commenting.DocComment.MissingShort
+	/** @var array */
+	public static $package_arr = array();
+
+	/**
+	 * Gather all plugins/themes with data in Update URI header.
+	 *
+	 * @return \stdClass
+	 */
+	public function init() {
+		$plugin_path = trailingslashit( \WP_PLUGIN_DIR );
+		$plugins     = get_plugins();
+		foreach ( $plugins as $file => $plugin ) {
+			if ( ! empty( $plugin['UpdateURI'] ) ) {
+				self::$package_arr[] = $plugin_path . $file;
+			}
+		}
+
+		$theme_path = \ABSPATH . \WP_CONTENT_DIR . '/themes/';
+		$themes     = wp_get_themes();
+		foreach ( $themes as $file => $theme ) {
+			if ( ! empty( $theme->get( 'UpdateURI' ) ) ) {
+				self::$package_arr[] = $theme_path . $file . '/style.css';
+			}
+		}
+
+		return $this;
+	}
+
+	/**
+	 * Run Git Updater Lite for potential packages.
+	 *
+	 * @return void
+	 */
+	public function run() {
+		foreach ( self::$package_arr as $package ) {
+			( new Lite( $package ) )->run();
+		}
+	}
+}
+
 // Dog food 🐶.
 require_once __DIR__ . '/vendor/afragen/git-updater-lite/Lite.php';
-add_filter(
-	'gul_server_domain',
-	function () {
-		return 'https://git-updater.com';
-	}
-);
-( new Lite( __FILE__ ) )->run();
+( new Loader() )->init()->run();
