@@ -13,7 +13,7 @@
  * Plugin URI:  https://github.com/afragen/alternate-updater
  * Description:  Allow for alternate sources of plugin/theme updates. Currently integrated with update server running Git Updater.
  * Author: Andy Fragen
- * Version: 0.3.0
+ * Version: 0.3.1
  * License: MIT
  * Text Domain: alternate-updater
  * Network: true
@@ -58,11 +58,7 @@ class Loader {
 		foreach ( $plugins as $file => $plugin ) {
 			$update_uri = $plugin['UpdateURI'];
 
-			// Ensure reasonably formatted data.
-			if ( ! empty( $update_uri )
-				&& filter_var( $update_uri, FILTER_VALIDATE_URL )
-				&& null === parse_url( $update_uri, PHP_URL_PATH ) // null means no path is present.
-			) {
+			if ( ! empty( $update_uri ) ) {
 				self::$package_arr[] = $plugin_path . $file;
 			}
 		}
@@ -72,11 +68,7 @@ class Loader {
 		foreach ( $themes as $file => $theme ) {
 			$update_uri = $theme->get( 'UpdateURI' );
 
-			// Ensure reasonably formatted data.
-			if ( ! empty( $update_uri )
-				&& filter_var( $update_uri, FILTER_VALIDATE_URL )
-				&& null === parse_url( $update_uri, PHP_URL_PATH ) // null means no path is present.
-			) {
+			if ( ! empty( $update_uri ) ) {
 				self::$package_arr[] = $theme_path . $file . '/style.css';
 			}
 		}
