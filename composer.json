@@ -1,5 +1,5 @@
 {
-  "name": "afragen/alternate-updater",
+  "name": "afragen/lite-updater",
   "description": "Allow updates of plugins and themes from hosts returning appropriate API responses.",
   "type": "wordpress-plugin",
   "license": "MIT",
@@ -12,12 +12,12 @@
     }
   ],
   "support": {
-    "issues": "https://github.com/WordPress/alternate-updater/issues",
-    "source": "https://github.com/WordPress/alternate-updater"
+    "issues": "https://github.com/WordPress/lite-updater/issues",
+    "source": "https://github.com/WordPress/lite-updater"
   },
   "prefer-stable": true,
   "require": {
-    "php": ">=8.0",
+    "php": ">=7.4",
     "afragen/git-updater-lite": "^2"
   },
   "require-dev": {

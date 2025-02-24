@@ -1,9 +1,9 @@
-# Alternate Updater
+# Lite Updater
 
 * Contributors: afragen
-* Tags: plugin, theme, updater, git-updater
+* Tags: plugin, theme, updater, git updater
 * Requires at least: 6.6
-* Requires PHP: 8.0
+* Requires PHP: 7.4
 * Donate link: <https://thefragens.com/git-updater-donate>
 * License: MIT
 

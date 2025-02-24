@@ -1,30 +1,30 @@
 <?php
 /**
- * Alternate Updater
+ * Lite Updater
  *
  * @author  Andy Fragen
  * @license MIT
- * @link    https://github.com/afragen/alternate-updater
- * @package git-updater
+ * @link    https://github.com/afragen/lite-updater
+ * @package git-updater-lite
  */
 
 /**
- * Plugin Name: Alternate Updater
- * Plugin URI:  https://github.com/afragen/alternate-updater
+ * Plugin Name: Lite Updater
+ * Plugin URI:  https://github.com/afragen/lite-updater
  * Description:  Allow for alternate sources of plugin/theme updates. Currently integrated with update server running Git Updater.
  * Author: Andy Fragen
- * Version: 0.3.1
+ * Version: 0.4.0
  * License: MIT
- * Text Domain: alternate-updater
+ * Text Domain: lite-updater
  * Network: true
  * Requires at least: 6.6
- * Requires PHP: 8.0
- * GitHub Plugin URI: https://github.com/afragen/alternate-updater
+ * Requires PHP: 7.4
+ * GitHub Plugin URI: https://github.com/afragen/lite-updater
  * Primary Branch: main
- * Update URI: afragen/alternate-updater
+ * Update URI: afragen/lite-updater
  */
 
-namespace Fragen\Git_Updater;
+namespace Fragen\Lite_Updater;
 
 /**
  * Exit if called directly.
@@ -36,7 +36,7 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Class Loader
  */
-class Loader {
+class Lite_Loader {
 
 	// phpcs:ignore Generic.Commenting.DocComment.MissingShort
 	/** @var array */
@@ -83,11 +83,11 @@ class Loader {
 	 */
 	public function run() {
 		foreach ( self::$package_arr as $package ) {
-			( new Lite( $package ) )->run();
+			( new \Fragen\Git_Updater\Lite( $package ) )->run();
 		}
 	}
 }
 
 // Dog food 🐶.
 require_once __DIR__ . '/vendor/afragen/git-updater-lite/Lite.php';
-( new Loader() )->init()->run();
+( new Lite_Loader() )->init()->run();
