@@ -4,24 +4,24 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8220b678fcbc6f31614e5b43f00d0539",
+    "content-hash": "2a3d9d1ecad321eaf4d1fe04fdad7ac1",
     "packages": [
         {
             "name": "afragen/git-updater-lite",
-            "version": "2.1.0",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/afragen/git-updater-lite.git",
-                "reference": "b9bda5f9d387823d77d9be210a00d686f607e4cf"
+                "reference": "06869d5a9abd97551415e5007fd1a694f799d02a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/afragen/git-updater-lite/zipball/b9bda5f9d387823d77d9be210a00d686f607e4cf",
-                "reference": "b9bda5f9d387823d77d9be210a00d686f607e4cf",
+                "url": "https://api.github.com/repos/afragen/git-updater-lite/zipball/06869d5a9abd97551415e5007fd1a694f799d02a",
+                "reference": "06869d5a9abd97551415e5007fd1a694f799d02a",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.0"
+                "php": ">=7.4"
             },
             "require-dev": {
                 "squizlabs/php_codesniffer": "3.10.3",
@@ -55,7 +55,7 @@
             ],
             "support": {
                 "issues": "https://github.com/afragen/git-updater-lite/issues",
-                "source": "https://github.com/afragen/git-updater-lite/tree/2.1.0"
+                "source": "https://github.com/afragen/git-updater-lite/tree/2.3.0"
             },
             "funding": [
                 {
@@ -63,7 +63,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-20T22:19:54+00:00"
+            "time": "2025-02-24T21:37:23+00:00"
         }
     ],
     "packages-dev": [
@@ -468,7 +468,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=8.0"
+        "php": ">=7.4"
     },
     "platform-dev": {},
     "plugin-api-version": "2.6.0"
