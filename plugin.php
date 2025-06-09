@@ -13,7 +13,7 @@
  * Plugin URI:  https://github.com/afragen/lite-updater
  * Description:  Allow for alternate sources of plugin/theme updates. Currently integrated with update server running Git Updater.
  * Author: Andy Fragen
- * Version: 0.4.1
+ * Version: 0.4.2
  * License: MIT
  * Text Domain: lite-updater
  * Network: true
