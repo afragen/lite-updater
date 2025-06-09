@@ -4,6 +4,7 @@
 * Tags: plugin, theme, updater, git updater
 * Requires at least: 6.6
 * Requires PHP: 7.4
+* Tested up to: 6.8
 * Donate link: <https://thefragens.com/git-updater-donate>
 * License: MIT
 
