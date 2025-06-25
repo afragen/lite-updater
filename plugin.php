@@ -35,5 +35,5 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 // require_once __DIR__ . '/vendor/afragen/git-updater-lite/Lite.php';
-require_once __DIR__ . '/inc/upgrader/namespace.php';
+require_once __DIR__ . '/inc/updater/namespace.php';
 bootstrap();
